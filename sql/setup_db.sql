@@ -16,4 +16,5 @@ create table RfidEvents(
 ALTER TABLE [RfidEvents]
   ADD CONSTRAINT [FK_RfidEvents_Rfid] FOREIGN KEY ([Rfid])
   REFERENCES [dbo].[Rfids] ([Id])
+  ON DELETE CASCADE
 GO
