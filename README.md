@@ -12,7 +12,7 @@
 - Change the connection string in the `appsettings.Development.json`
 - Run the api project
 - In the `tests` directory, execute `build.cmd` (Windows) or `build.sh` (Not Windows) 
- - pulls in required packages
+  - pulls in required packages
 - Open the `tests/stateful_tests/test.fsx` and load it into F# Interactive (FSI)
- - might have to change the `baseUrl` to match your system
- - `Check.One` is the line that starts this stateful testing
+  - might have to change the `baseUrl` to match your system
+  - `Check.One` is the line that starts this stateful testing
