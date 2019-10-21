@@ -86,6 +86,9 @@ let spec =
                                 actual = model |@ sprintf "startFloor - model: %s <> actual: %s" model actual
                             override __.ToString() = "startFloor" }
 
+
+
+
     let endFloor = { new Command<FactoryFloor, ModelState>() with 
                             override __.RunActual a = a.EndFloor(); a 
                             override __.RunModel m = endFloor m
@@ -116,7 +119,7 @@ let spec =
     { new ICommandGenerator<FactoryFloor, ModelState> with 
         member __.InitialActual = FactoryFloor("test")
         member __.InitialModel = OffFloor
-        member __.Next model = Gen.elements [startBreak; startFloor; endBreak; endFloor ] }
+        member __.Next model = Gen.elements [startBreak; startFloor; endBreak; endFloor] }
 
 
 let config = {

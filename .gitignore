@@ -302,6 +302,9 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
+# Ionide
+.ionide/
+
 # CodeRush personal settings
 .cr/personal
 
